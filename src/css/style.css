@@ -1,0 +1,303 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none; }
+
+.selector-for-some-widget {
+  box-sizing: content-box; }
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px; }
+
+.sticky {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  z-index: 100; }
+
+.status {
+  height: 3px;
+  width: 0;
+  background-color: #00aeef;
+  transition: 0.8s linear;
+  position: fixed;
+  top: 110px;
+  left: 0;
+  z-index: 1; }
+
+.row-line {
+  width: 100%;
+  height: 1px;
+  background-color: #ebebeb; }
+
+.gray {
+  color: #b3b3b3; }
+
+.blue {
+  color: #00aeef;
+  font-family: "Oswald", sans-serif; }
+
+header {
+  background-color: #E3F2FD;
+  color: #777777;
+  font-size: 18px;
+  height: 110px; }
+  header .menu-bottom {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px; }
+    header .menu-bottom .navbar {
+      background-color: #E3F2FD;
+      z-index: 1; }
+      header .menu-bottom .navbar .navbar-collapse ul li {
+        font-family: "Oswald", sans-serif;
+        padding: 5px;
+        text-transform: uppercase; }
+        header .menu-bottom .navbar .navbar-collapse ul li a {
+          color: #000; }
+          header .menu-bottom .navbar .navbar-collapse ul li a:hover {
+            color: #00aeef; }
+
+/*------------Showcase-----------*/
+.showcase {
+  width: 100%;
+  height: 85vh;
+  background: url("../img/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center right; }
+  .showcase .showcase-box {
+    padding-top: 100px;
+    padding-right: 50px; }
+    .showcase .showcase-box h1 {
+      font-size: 64px;
+      font-family: "Oswald", sans-serif;
+      color: #00aeef;
+      text-transform: uppercase; }
+    .showcase .showcase-box h2 {
+      font-family: "Oswald", sans-serif;
+      font-size: 56px;
+      color: #00aeef;
+      padding-top: 20px; }
+    .showcase .showcase-box .btn-showcase {
+      margin: 50px auto; }
+      .showcase .showcase-box .btn-showcase a {
+        font-size: 1.2rem;
+        font-weight: bold;
+        position: relative;
+        margin: auto;
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: #00aeef;
+        padding: 20px;
+        box-sizing: content-box;
+        border: 2px solid transparent;
+        text-transform: uppercase; }
+        .showcase .showcase-box .btn-showcase a:hover {
+          font-weight: bold;
+          text-decoration: none; }
+    .showcase .showcase-box .btn-showcase a::after,
+    .showcase .showcase-box .btn-showcase a::before,
+    .showcase .showcase-box .corner::after,
+    .showcase .showcase-box .corner::before {
+      display: block;
+      content: "";
+      width: 20px;
+      height: 20px;
+      position: absolute; }
+    .showcase .showcase-box .btn-showcase a::after {
+      top: -2px;
+      right: -2px;
+      border-top: 2px solid #00aeef;
+      border-right: 2px solid #00aeef;
+      transition: 1s all; }
+    .showcase .showcase-box .corner::before {
+      bottom: -2px;
+      left: -2px;
+      border-bottom: 2px solid #00aeef;
+      border-left: 2px solid #00aeef;
+      transition: 1s all; }
+    .showcase .showcase-box .btn-showcase a:hover::after,
+    .showcase .showcase-box .btn-showcase a:hover::before {
+      width: 292px;
+      height: 66px; }
+    .showcase .showcase-box a:hover .corner::after,
+    .showcase .showcase-box a:hover .corner::before {
+      width: 292px;
+      height: 66px; }
+
+/*------------About-----------*/
+.about {
+  margin-top: 100px;
+  margin-bottom: 100px; }
+  .about .about-box {
+    padding-left: 30px; }
+    .about .about-box h4 {
+      font-family: "Oswald", sans-serif;
+      font-size: 36px;
+      color: #00aeef; }
+
+.box {
+  background-color: #E3F2FD;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+  .box .box-mail {
+    display: flex;
+    margin: auto; }
+    .box .box-mail li {
+      padding-right: 20px; }
+      .box .box-mail li i {
+        border: 1px solid #e9e9e9;
+        border-radius: 100%;
+        padding: 10px;
+        margin-right: 10px; }
+      .box .box-mail li a {
+        color: #5f5f5f;
+        text-decoration: none; }
+        .box .box-mail li a:hover {
+          color: #00aeef; }
+        .box .box-mail li a span {
+          font-family: "Oswald", sans-serif;
+          color: #5f5f5f; }
+
+/*------------Services-----------*/
+.services {
+  margin-top: 50px;
+  margin-bottom: 50px; }
+  .services .services-box {
+    margin-top: 100px; }
+    .services .services-box img {
+      display: block;
+      margin: auto auto 20px; }
+      .services .services-box img:hover {
+        transform: scale(1.1);
+        transition-duration: 0.5s; }
+    .services .services-box h4 {
+      color: #000;
+      font-family: "Oswald", sans-serif;
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 20px; }
+    .services .services-box p {
+      text-align: center; }
+
+/*------------detaling-----------*/
+.detaling {
+  margin-top: 100px;
+  margin-bottom: 100px; }
+  .detaling .detaling-box h4 {
+    font-family: "Oswald", sans-serif;
+    font-size: 36px;
+    color: #00aeef;
+    margin-bottom: 20px; }
+
+/*------------contact-----------*/
+.contact {
+  background-color: #E3F2FD; }
+  .contact h3 {
+    color: #00aeef;
+    font-family: "Oswald", sans-serif;
+    font-size: 48px;
+    text-transform: uppercase;
+    margin: 100px auto 10px; }
+  .contact .contact-form {
+    width: 90%;
+    min-height: 520px;
+    padding: 30px;
+    background-color: #fafafa;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    border-radius: 2px; }
+    .contact .contact-form h4 {
+      color: #00aeef;
+      font-family: "Oswald", sans-serif;
+      padding-bottom: 10px; }
+    .contact .contact-form .form-group {
+      width: 100%; }
+      .contact .contact-form .form-group input {
+        width: 100%;
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -webkit-appearance: none; }
+    .contact .contact-form .button-serwis {
+      background-color: #00aeef;
+      font-family: "Oswald", sans-serif;
+      color: #ffffff;
+      padding: 10px 20px;
+      border: none;
+      border: 2px solid #00aeef;
+      border-radius: 2px;
+      outline: none;
+      -webkit-border-radius: 0;
+      -webkit-appearance: none;
+      cursor: pointer; }
+      .contact .contact-form .button-serwis:hover {
+        background-color: #ffffff;
+        border: 2px solid #00aeef;
+        color: #00aeef;
+        transition-duration: 0.5s; }
+  .contact .accordion {
+    min-height: 520px;
+    margin-top: 50px;
+    background-color: #f7f7f7;
+    padding: 30px 10px 5px;
+    border-radius: 3px;
+    margin-bottom: 100px; }
+    .contact .accordion .faq-header {
+      display: flex; }
+      .contact .accordion .faq-header h4 {
+        font-family: "Oswald", sans-serif;
+        color: #00aeef;
+        padding: 20px; }
+      .contact .accordion .faq-header p {
+        font-size: 12px;
+        padding-top: 30px;
+        color: #b3b3b3; }
+    .contact .accordion a {
+      font-family: "Oswald", sans-serif;
+      text-decoration: none; }
+
+.map {
+  width: 100%;
+  height: 300px;
+  border-radius: 3px; }
+
+footer {
+  font-family: "Oswald", sans-serif;
+  background-color: #E3F2FD;
+  color: #00aeef;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px; }
+
+@media (max-width: 769px) {
+  .contact .contact-form {
+    width: 100%;
+    min-height: 585px; } }
+
+@media (max-width: 670px) {
+  .showcase {
+    height: auto;
+    background-position: 20% 50%; }
+    .showcase .showcase-box {
+      padding-top: 20px; }
+      .showcase .showcase-box h1 {
+        font-size: 48px;
+        font-family: "Oswald", sans-serif;
+        color: #00aeef;
+        text-transform: uppercase; }
+      .showcase .showcase-box h2 {
+        font-family: "Oswald", sans-serif;
+        font-size: 36px;
+        color: #00aeef;
+        padding-top: 20px; }
+  .contact h3 {
+    font-size: 36px;
+    padding-left: 20px; }
+  .box .box-mail {
+    display: flex;
+    flex-direction: column; }
+  .about .about-box {
+    padding-left: 0; } }
